@@ -9,17 +9,22 @@ header {
     border-color: gold;
     padding: 10px;
     width: fit-content;
-    border-radius: 5%;
 }
 
 input {
     background-color: #40e35e;
 }
 
+output {
+    margin: 10%;
+    font-size: 150%;
+    font-weight: bold;
+}
+
 table {
     background-color: #e2ff4e;
-    width: 50%;
-
+    width: 70%;
+    border-radius: 7%;
 }
 
 th, td {
@@ -30,16 +35,6 @@ td {
     text-align: center;
 }
 
-button {
-    width: 30%;
-    border: 2px solid;
-    background-color: rgb(235, 72, 72);
-    font-size: small;
-    font-weight: 700;
-    padding: 3px;
-    margin-top: 3%;
-}
-
 textarea {
 
     margin-top: 1%;
@@ -47,4 +42,9 @@ textarea {
     width: 23%;
     height: 110px;
     border-radius: 2%;
+}
+
+div {
+    margin: 10%;
+    font-size: small;
 }
