@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <header>
+        <H1>KALKULATOR BMI</H1>
+        <h2>oblicz swój wskaźnik BMI</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>PŁEĆ</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <form>
+                            <input type="radio" name="sex"> <label for="Kobieta">Kobieta</label><br>
+                            <input type="radio" name="sex"> <label for="Mężczyzna">Mężczyzna</label><br>
+                        </form>
+                    </td>
+                </tr>
+
+            </tbody>
+
+            <thead>
+                <tr>
+                    <th>WAGA</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="number" name="sex" id="podaj wagę">
+                    </td>
+                </tr>
+            </tbody>
+
+            <thead>
+                <tr>
+                    <th>WZROST</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="number" name="height" id="podaj wzrost">
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <form>
+            <button type="submit" onclick="this.disabled='disabled'">OBLICZ</button>
+        </form>
+
+    </header>
+
+    <textarea name="opis wyniku" id="wynik" cols="30" rows="10">
+    
+    Zakres wartości BMI:
+        poniżej 16 - 18.49: niedowaga
+        18.5 - 24.99: wartość prawidłowa
+        25 - 29.99: nadwaga
+        30 - powyżej 40: otyłość
+    </textarea>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
