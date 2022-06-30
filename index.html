@@ -15,9 +15,7 @@
             <thead>
                 <tr>
                     <th>PŁEĆ</th>
-
                 </tr>
-
             </thead>
 
             <tbody>
@@ -29,42 +27,25 @@
                         </form>
                     </td>
                 </tr>
-
             </tbody>
-
-            <thead>
-                <tr>
-                    <th>WAGA</th>
-                </tr>
-            </thead>
 
             <tbody>
                 <tr>
                     <td>
-                        <input type="number" name="sex" id="podaj wagę">
-                    </td>
-                </tr>
-            </tbody>
-
-            <thead>
-                <tr>
-                    <th>WZROST</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>
-                        <input type="number" name="height" id="podaj wzrost">
+                        <form oninput="result.value = parseInt(waga.value) / parseInt(wzrost.value)">
+                            <input type="number" name="waga"> WAGA (kg)<br>
+                            <input type="number" name="wzrost"> WZROST* (m)<br>
+                            <output id="result">wynik BMI tutaj</output><br>
+                            
+                        </form>
+                        <div>
+                             * w metrach ^2
+                        </div>
                     </td>
                 </tr>
             </tbody>
 
         </table>
-
-        <form>
-            <button type="submit" onclick="this.disabled='disabled'">OBLICZ</button>
-        </form>
 
     </header>
 
